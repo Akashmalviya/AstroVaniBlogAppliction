@@ -1,0 +1,96 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1354px;
+    }
+}
+
+.btn-warning {
+    border-radius: 50px;
+}
+
+.pd {
+    padding: 10px;
+}
+
+.marginText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:500px) {
+    .logo {
+        height: 288px;
+        position: relative;
+        top: 4rem;
+    }
+    .add {
+        height: 300px;
+        /* position: relative;
+        margin: 8px; */
+    }
+    .hero {
+        height: 371px;
+        width: 100%;
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media (min-width:500px) {
+    .logo {
+        height: 359px;
+        position: relative;
+        top: 74px;
+    }
+    .add {
+        height: 400px;
+        position: relative;
+    }
+    .hero {
+        height: 460px;
+        width: 100%;
+    }
+}
+
+.container-fluid {
+    margin: 0%;
+    position: relative;
+    top: -4px
+}
+
+.logo {
+    position: relative;
+}
+
+.background-sky {
+    background: linear-gradient(145deg, #FBC02D, #FFFF33);
+    color: #fff;
+    top: -11px;
+    position: absolute;
+    z-index: -1;
+}
+
+.responsive-image {
+    height: auto;
+    width: 100%;
+}
+
+.card .card-body .card-text {
+    color: #747373;
+    font-size: 16px;
+    font-weight: 400;
+}

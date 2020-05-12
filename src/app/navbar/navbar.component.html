@@ -1,0 +1,85 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg fixed-top navbar-light warning-color lighten-5">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+        <ul class="navbar-nav mr-auto" *ngIf="!Lang.getlang()">
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home
+        <span class="sr-only">(current)</span>
+      </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about" routerLinkActive="active">About Us</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/ask" routerLinkActive="active">Ask to Astrologer</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/servies" routerLinkActive="active">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/addBlog" routerLinkActive="active" *ngIf="auth.loggedIn()">Add Blog</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav mr-auto" *ngIf="Lang.getlang()">
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">मुख पृष्ठ
+      <span class="sr-only">(current)</span>
+    </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about" routerLinkActive="active">हमारे बारे में
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/ask" routerLinkActive="active">
+                  ज्योतिषी से पूछें</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/servies" routerLinkActive="active">
+                  सेवाएं</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="active">ब्लॉग</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active">संपर्क करें</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/addBlog" routerLinkActive="active" *ngIf="auth.loggedIn()">Add Blog</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item avatar">
+                <button class="btn btn-outline-white btn-sm my-0" type="button" *ngIf="auth.loggedIn()" routerLink="/register" routerLinkActive="active">register</button>
+
+                <button class="btn btn-outline-white btn-sm my-0" type="button" style="cursor:pointer" *ngIf="auth.loggedIn()" (click)="auth.loggedOut()">Logout</button>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                    <a class="dropdown-item hoverable" (click)="lang(false)">English</a>
+                    <a class="dropdown-item hoverable" (click)="lang(true)">हिंदी</a>
+
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar -->

@@ -1,0 +1,8 @@
+.text {
+    overflow: hidden;
+    white-space: normal;
+    /* Exactly 2 lines are displayed.
+      Height of 1 line is 1.2em*/
+    height: 2.5em;
+    text-overflow: -o-ellipsis-lastline;
+}

@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cardo', serif;
+    font-size: 18px;
+    padding: 0%;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+.active-route {
+    background-color: lightgrey;
+}
+
+.active {
+    color: rgba(0, 0, 0, .7)!important;
+    border-color: lightgray !important;
+    box-sizing: border-box !important;
+}
+
+.dropdown .dropdown-menu.dropdown-info .dropdown-item:hover,
+.dropdown .dropdown-menu.dropdown-info .dropdown-item:active {
+    background-color: #FBC02D !important;
+    border-radius: .125rem;
+    padding: .5rem;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+option.waves-effect,
+option.waves-light {
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.responsive-image {
+    height: auto;
+    width: 100%;
+}
+
+.md-form input[type=text]:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 #FBC02D;
+    border-bottom: 1px solid #FBC02D
+}
+
+.md-form input[type=text]:focus:not([readonly])+label {
+    color: #FBC02D;
+}
+
+.md-form input[type=number]:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 #FBC02D;
+    border-bottom: 1px solid #FBC02D
+}
+
+.md-form input[type=number]:focus:not([readonly])+label {
+    color: #FBC02D;
+}
+
+.md-form input[type=email]:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 #FBC02D;
+    border-bottom: 1px solid #FBC02D
+}
+
+.md-form input[type=email]:focus:not([readonly])+label {
+    color: #FBC02D;
+}
+
+.md-form input[type=date]:focus:not([readonly])+label {
+    color: #FBC02D;
+}
+
+.md-form input[type=date]:focus:not([readonly]) {
+    box-shadow: 0 1px 0 0 #FBC02D;
+}
+
+.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #FBC02D;
+}
+
+.md-form textarea.md-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 #FBC02D;
+    box-shadow: 0 1px 0 0 #FBC02D;
+    border-bottom: 1px solid #FBC02D;
+}
+
+.md-form .prefix.active {
+    color: #FBC02D;
+}

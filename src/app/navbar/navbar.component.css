@@ -1,0 +1,34 @@
+.navbar[_ngcontent-jjx-c1] .dropdown-menu[_ngcontent-jjx-c1] {
+    position: absolute!important;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 992px) {
+    .navbar .dropdown-menu {
+        position: absolute!important;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -112px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .dropdown-menu {
+        position: absolute!important;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0px;
+    }
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #FBC02D;
+    border-radius: 5%;
+}

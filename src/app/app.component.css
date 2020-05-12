@@ -1,0 +1,41 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+main {
+    padding: 0%;
+}
+
+.teal {
+    background-color: #FBC02D;
+}
+
+@media (max-width:982px) {
+    .whatapp {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (min-width:1042px) {
+    .whatapp {
+        visibility: hidden;
+    }
+}
+
+.headline {
+    height: 3rem;
+    width: 100%;
+    background-color: red;
+}
+
+.teal.accent-3 {
+    background-color: #FBC02D!important;
+}

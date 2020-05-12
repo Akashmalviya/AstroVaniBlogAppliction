@@ -1,0 +1,58 @@
+<div class="container mt-5 mt-5">
+
+    <div class="container mt-5 ">
+
+
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+
+            <!-- Section heading -->
+            <h2 class="text-center font-weight-bold mb-4 pb-2 pt-5">Recent posts</h2>
+            <!-- Section description -->
+            <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+            <!-- Grid row -->
+            <div class="row align-items-center" *ngFor="let item of response">
+
+                <!-- Grid column -->
+                <div class="col-lg-5 col-xl-4 mt-5">
+
+                    <!-- Featured image -->
+                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                        <img class="img-fluid" src={{item.image}} alt="../../assets/img/khundli.png">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-7 col-xl-8">
+
+                    <!-- Post title -->
+                    <h4 class="font-weight-bold mb-3"><strong>{{item.title}}</strong></h4>
+                    <!-- Excerpt -->
+                    <span> <p class="dark-grey-text text">{{item.excert}}</p> ....</span>
+                    <!-- Post data -->
+                    <p>by <a class="font-weight-bold">{{item.author}}</a>, {{item.publishdate |date:'d/M/yyyy'}}</p>
+                    <!-- Read more button -->
+                    <a routerLink="{{item._id}}" class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>&nbsp;
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <hr class="my-5">
+
+        </section>
+        <!--Section: Content-->
+
+
+    </div>
+
+</div>
